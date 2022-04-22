@@ -1,7 +1,7 @@
 # iCopied
 An Opensource and Free Windows 10 Clipboard Tool - Copying Made Easy
 
-# Roadmap/Currwnt State
+# Roadmap/Current State
  - Current State > A UI Has Been Developed, Now Core Functions Are Being Added > Soon
 
 # Interface

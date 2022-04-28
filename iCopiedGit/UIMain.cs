@@ -21,6 +21,9 @@ namespace iCopiedGit
         {
             ToHide();
             TextCopyOn();
+
+            this.CenterToScreen();
+            //ClipboardClearing.Start();
         }
 
         //Functions
@@ -46,13 +49,18 @@ namespace iCopiedGit
         //Hide On Load
         private void ToHide()
         {
+            MoreInfoPanel.Hide();
             SecurityMenu.Hide();
-            MoreMenu.Hide();
+            CountMenu.Hide();
+            MoreMenu.Hide();            
         }
 
-        //Ints
+        //Counter Ints
         private int _addtxtcount = 0;
         private int _addimgcount = 0;
+        private int _addtotalcount = 0;
+
+        //Clearing Ints
         private int _detectclearcount = 0;
 
         //Timer Ticks
@@ -62,8 +70,11 @@ namespace iCopiedGit
             {
                 CopiedTextOutput.Items.Add("  • " + System.DateTime.Now.ToShortTimeString() + " - " + Clipboard.GetText());
 
-                this._addtxtcount++;
-                //this.WordsCopiedInt.Text = "Words Copied : " + this._addtxtcount.ToString();
+                this._addtxtcount++;                
+                this.CopiedPhraseInt.Text = "Copied Phrases : " + this._addtxtcount.ToString();
+
+                this._addtotalcount++;
+                this.SessionTotalInt.Text = "Session Total : " + this._addtotalcount.ToString();
 
                 //Clear After Grabbing
                 Clipboard.Clear();
@@ -74,9 +85,12 @@ namespace iCopiedGit
             if (Clipboard.ContainsImage())
             {
                 CopiedImageOutput.Image = Clipboard.GetImage();
+                
+                this._addimgcount++;                
+                this.CopiedImagesInt.Text = "Copied Images : " + this._addimgcount.ToString();
 
-                this._addimgcount++;
-                //this.ImagesCopiedInt.Text = "Images Copied : " + this._addimgcount.ToString();
+                this._addtotalcount++;
+                this.SessionTotalInt.Text = "Session Total : " + this._addtotalcount.ToString();
 
                 //Clear After Grabbing
                 Clipboard.Clear();
@@ -84,10 +98,8 @@ namespace iCopiedGit
         }
         private void ClipboardClearing_Tick(object sender, EventArgs e)
         {
+            //Always Clearing
             Clipboard.Clear();
-
-            /*this._detectclearcount++;
-            this.ClearedCountInt.Text = "Detected And Cleared : " + this._detectclearcount.ToString();*/
         }
     }
 }

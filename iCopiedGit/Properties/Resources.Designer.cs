@@ -63,6 +63,16 @@ namespace iCopiedGit.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_copyright_all_rights_reserved_96 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-copyright-all-rights-reserved-96", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_menu_rounded_100 {
             get {
                 object obj = ResourceManager.GetObject("icons8-menu-rounded-100", resourceCulture);

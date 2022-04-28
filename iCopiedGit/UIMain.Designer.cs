@@ -35,50 +35,62 @@ namespace iCopiedGit
             this.SessionCount = new System.Windows.Forms.Button();
             this.Security = new System.Windows.Forms.Button();
             this.SecurityMenu = new System.Windows.Forms.Panel();
-            this.ClearedCountInt = new System.Windows.Forms.Label();
             this.ClearHelp = new System.Windows.Forms.Button();
             this.ClearClipboard = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.SecIcon = new System.Windows.Forms.Button();
             this.ClipboardClear = new System.Windows.Forms.Label();
             this.CopiedTextOutputPanel = new System.Windows.Forms.Panel();
+            this.CopiedTextEnabled = new System.Windows.Forms.Label();
+            this.ToggleTextCopyService = new System.Windows.Forms.Button();
             this.CopiedTextOutput = new System.Windows.Forms.ListView();
             this.CopiedTextHeader = new System.Windows.Forms.Label();
             this.CopiedImageOutputPanel = new System.Windows.Forms.Panel();
-            this.CopiedImagesHeader = new System.Windows.Forms.Label();
-            this.CopiedTextEnabled = new System.Windows.Forms.Label();
             this.CopiedImagesEnabled = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.CopiedImagesHeader = new System.Windows.Forms.Label();
+            this.CopiedImageOutput = new System.Windows.Forms.PictureBox();
             this.GetText = new System.Windows.Forms.Timer(this.components);
             this.GetImage = new System.Windows.Forms.Timer(this.components);
             this.ClipboardClearing = new System.Windows.Forms.Timer(this.components);
             this.MoreMenu = new System.Windows.Forms.Panel();
+            this.MoreIcon = new System.Windows.Forms.Button();
+            this.ToggleMoveable = new System.Windows.Forms.Button();
             this.MoveableUIHeader = new System.Windows.Forms.Label();
             this.ImageCopy = new System.Windows.Forms.Button();
             this.TextCopy = new System.Windows.Forms.Button();
             this.ServiceSelect = new System.Windows.Forms.Label();
             this.MoreInfo = new System.Windows.Forms.Button();
+            this.ToggleShowInTaskbar = new System.Windows.Forms.Button();
             this.InTaskbarHeader = new System.Windows.Forms.Label();
+            this.ToggleTopMost = new System.Windows.Forms.Button();
             this.TopMostHeader = new System.Windows.Forms.Label();
             this.ExitApp = new System.Windows.Forms.Button();
             this.RestartApp = new System.Windows.Forms.Button();
             this.CountMenu = new System.Windows.Forms.Panel();
-            this.CopiedPhraseInt = new System.Windows.Forms.Label();
-            this.CountIcon = new System.Windows.Forms.Button();
-            this.MoreIcon = new System.Windows.Forms.Button();
-            this.ToggleMoveable = new System.Windows.Forms.Button();
-            this.ToggleShowInTaskbar = new System.Windows.Forms.Button();
-            this.ToggleTopMost = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.SecIcon = new System.Windows.Forms.Button();
-            this.ToggleTextCopyService = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.CopiedImageOutput = new System.Windows.Forms.PictureBox();
-            this.CopiedImagesInt = new System.Windows.Forms.Label();
             this.SessionTotalInt = new System.Windows.Forms.Label();
+            this.CopiedImagesInt = new System.Windows.Forms.Label();
+            this.CountIcon = new System.Windows.Forms.Button();
+            this.CopiedPhraseInt = new System.Windows.Forms.Label();
+            this.MoreInfoPanel = new System.Windows.Forms.Panel();
+            this.RightsReservedLink = new System.Windows.Forms.Label();
+            this.ToggleOffLink = new System.Windows.Forms.Label();
+            this.ToggleOnLink = new System.Windows.Forms.Label();
+            this.PlusLink = new System.Windows.Forms.Label();
+            this.MenuRoundedLink = new System.Windows.Forms.Label();
+            this.ShieldLink = new System.Windows.Forms.Label();
+            this.WillHick = new System.Windows.Forms.Label();
+            this.IconsByIcons8 = new System.Windows.Forms.Label();
+            this.CopyrightIcon = new System.Windows.Forms.Button();
+            this.DevelopedBy = new System.Windows.Forms.Label();
+            this.Credits = new System.Windows.Forms.Button();
             this.SecurityMenu.SuspendLayout();
             this.CopiedTextOutputPanel.SuspendLayout();
             this.CopiedImageOutputPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CopiedImageOutput)).BeginInit();
             this.MoreMenu.SuspendLayout();
             this.CountMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CopiedImageOutput)).BeginInit();
+            this.MoreInfoPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // More
@@ -133,27 +145,15 @@ namespace iCopiedGit
             // 
             this.SecurityMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.SecurityMenu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.SecurityMenu.Controls.Add(this.ClearedCountInt);
             this.SecurityMenu.Controls.Add(this.ClearHelp);
             this.SecurityMenu.Controls.Add(this.ClearClipboard);
             this.SecurityMenu.Controls.Add(this.button1);
             this.SecurityMenu.Controls.Add(this.SecIcon);
             this.SecurityMenu.Controls.Add(this.ClipboardClear);
-            this.SecurityMenu.Location = new System.Drawing.Point(176, 372);
+            this.SecurityMenu.Location = new System.Drawing.Point(176, 397);
             this.SecurityMenu.Name = "SecurityMenu";
-            this.SecurityMenu.Size = new System.Drawing.Size(440, 202);
+            this.SecurityMenu.Size = new System.Drawing.Size(440, 177);
             this.SecurityMenu.TabIndex = 41;
-            // 
-            // ClearedCountInt
-            // 
-            this.ClearedCountInt.AutoSize = true;
-            this.ClearedCountInt.Font = new System.Drawing.Font("Microsoft YaHei", 7F, System.Drawing.FontStyle.Bold);
-            this.ClearedCountInt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(90)))), ((int)(((byte)(90)))), ((int)(((byte)(90)))));
-            this.ClearedCountInt.Location = new System.Drawing.Point(32, 103);
-            this.ClearedCountInt.Name = "ClearedCountInt";
-            this.ClearedCountInt.Size = new System.Drawing.Size(182, 19);
-            this.ClearedCountInt.TabIndex = 40;
-            this.ClearedCountInt.Text = "Detected And Cleared : 0";
             // 
             // ClearHelp
             // 
@@ -162,11 +162,11 @@ namespace iCopiedGit
             this.ClearHelp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.ClearHelp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.ClearHelp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ClearHelp.Font = new System.Drawing.Font("Microsoft YaHei", 8.6F, System.Drawing.FontStyle.Bold);
+            this.ClearHelp.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.ClearHelp.ForeColor = System.Drawing.Color.White;
-            this.ClearHelp.Location = new System.Drawing.Point(346, 129);
+            this.ClearHelp.Location = new System.Drawing.Point(341, 110);
             this.ClearHelp.Name = "ClearHelp";
-            this.ClearHelp.Size = new System.Drawing.Size(66, 45);
+            this.ClearHelp.Size = new System.Drawing.Size(78, 45);
             this.ClearHelp.TabIndex = 39;
             this.ClearHelp.Text = "Help";
             this.ClearHelp.UseVisualStyleBackColor = true;
@@ -178,21 +178,47 @@ namespace iCopiedGit
             this.ClearClipboard.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.ClearClipboard.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.ClearClipboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ClearClipboard.Font = new System.Drawing.Font("Microsoft YaHei", 8.6F, System.Drawing.FontStyle.Bold);
+            this.ClearClipboard.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.ClearClipboard.ForeColor = System.Drawing.Color.White;
-            this.ClearClipboard.Location = new System.Drawing.Point(26, 129);
+            this.ClearClipboard.Location = new System.Drawing.Point(23, 110);
             this.ClearClipboard.Name = "ClearClipboard";
-            this.ClearClipboard.Size = new System.Drawing.Size(161, 45);
+            this.ClearClipboard.Size = new System.Drawing.Size(187, 45);
             this.ClearClipboard.TabIndex = 38;
             this.ClearClipboard.Text = "Clear Clipboard";
             this.ClearClipboard.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackgroundImage = global::iCopiedGit.Properties.Resources.icons8_toggle_off_96;
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(354, 65);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(49, 49);
+            this.button1.TabIndex = 28;
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // SecIcon
+            // 
+            this.SecIcon.BackgroundImage = global::iCopiedGit.Properties.Resources.icons8_shield_96;
+            this.SecIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.SecIcon.FlatAppearance.BorderSize = 0;
+            this.SecIcon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.SecIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SecIcon.Location = new System.Drawing.Point(31, 24);
+            this.SecIcon.Name = "SecIcon";
+            this.SecIcon.Size = new System.Drawing.Size(30, 30);
+            this.SecIcon.TabIndex = 29;
+            this.SecIcon.UseVisualStyleBackColor = true;
             // 
             // ClipboardClear
             // 
             this.ClipboardClear.AutoSize = true;
             this.ClipboardClear.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.ClipboardClear.ForeColor = System.Drawing.Color.White;
-            this.ClipboardClear.Location = new System.Drawing.Point(31, 70);
+            this.ClipboardClear.Location = new System.Drawing.Point(31, 75);
             this.ClipboardClear.Name = "ClipboardClear";
             this.ClipboardClear.Size = new System.Drawing.Size(174, 30);
             this.ClipboardClear.TabIndex = 29;
@@ -208,6 +234,30 @@ namespace iCopiedGit
             this.CopiedTextOutputPanel.Name = "CopiedTextOutputPanel";
             this.CopiedTextOutputPanel.Size = new System.Drawing.Size(872, 572);
             this.CopiedTextOutputPanel.TabIndex = 42;
+            // 
+            // CopiedTextEnabled
+            // 
+            this.CopiedTextEnabled.AutoSize = true;
+            this.CopiedTextEnabled.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.CopiedTextEnabled.ForeColor = System.Drawing.Color.White;
+            this.CopiedTextEnabled.Location = new System.Drawing.Point(757, 9);
+            this.CopiedTextEnabled.Name = "CopiedTextEnabled";
+            this.CopiedTextEnabled.Size = new System.Drawing.Size(43, 30);
+            this.CopiedTextEnabled.TabIndex = 35;
+            this.CopiedTextEnabled.Text = "On";
+            // 
+            // ToggleTextCopyService
+            // 
+            this.ToggleTextCopyService.BackgroundImage = global::iCopiedGit.Properties.Resources.icons8_toggle_on_96;
+            this.ToggleTextCopyService.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ToggleTextCopyService.FlatAppearance.BorderSize = 0;
+            this.ToggleTextCopyService.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.ToggleTextCopyService.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ToggleTextCopyService.Location = new System.Drawing.Point(813, 3);
+            this.ToggleTextCopyService.Name = "ToggleTextCopyService";
+            this.ToggleTextCopyService.Size = new System.Drawing.Size(49, 43);
+            this.ToggleTextCopyService.TabIndex = 34;
+            this.ToggleTextCopyService.UseVisualStyleBackColor = true;
             // 
             // CopiedTextOutput
             // 
@@ -246,6 +296,30 @@ namespace iCopiedGit
             this.CopiedImageOutputPanel.Size = new System.Drawing.Size(872, 572);
             this.CopiedImageOutputPanel.TabIndex = 43;
             // 
+            // CopiedImagesEnabled
+            // 
+            this.CopiedImagesEnabled.AutoSize = true;
+            this.CopiedImagesEnabled.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.CopiedImagesEnabled.ForeColor = System.Drawing.Color.White;
+            this.CopiedImagesEnabled.Location = new System.Drawing.Point(757, 9);
+            this.CopiedImagesEnabled.Name = "CopiedImagesEnabled";
+            this.CopiedImagesEnabled.Size = new System.Drawing.Size(46, 30);
+            this.CopiedImagesEnabled.TabIndex = 37;
+            this.CopiedImagesEnabled.Text = "Off";
+            // 
+            // button2
+            // 
+            this.button2.BackgroundImage = global::iCopiedGit.Properties.Resources.icons8_toggle_off_96;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(813, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(49, 43);
+            this.button2.TabIndex = 36;
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // CopiedImagesHeader
             // 
             this.CopiedImagesHeader.AutoSize = true;
@@ -257,27 +331,14 @@ namespace iCopiedGit
             this.CopiedImagesHeader.TabIndex = 27;
             this.CopiedImagesHeader.Text = "Copied Images";
             // 
-            // CopiedTextEnabled
+            // CopiedImageOutput
             // 
-            this.CopiedTextEnabled.AutoSize = true;
-            this.CopiedTextEnabled.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.CopiedTextEnabled.ForeColor = System.Drawing.Color.White;
-            this.CopiedTextEnabled.Location = new System.Drawing.Point(757, 9);
-            this.CopiedTextEnabled.Name = "CopiedTextEnabled";
-            this.CopiedTextEnabled.Size = new System.Drawing.Size(46, 30);
-            this.CopiedTextEnabled.TabIndex = 35;
-            this.CopiedTextEnabled.Text = "Off";
-            // 
-            // CopiedImagesEnabled
-            // 
-            this.CopiedImagesEnabled.AutoSize = true;
-            this.CopiedImagesEnabled.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.CopiedImagesEnabled.ForeColor = System.Drawing.Color.White;
-            this.CopiedImagesEnabled.Location = new System.Drawing.Point(757, 9);
-            this.CopiedImagesEnabled.Name = "CopiedImagesEnabled";
-            this.CopiedImagesEnabled.Size = new System.Drawing.Size(46, 30);
-            this.CopiedImagesEnabled.TabIndex = 37;
-            this.CopiedImagesEnabled.Text = "Off";
+            this.CopiedImageOutput.Location = new System.Drawing.Point(3, 53);
+            this.CopiedImageOutput.Name = "CopiedImageOutput";
+            this.CopiedImageOutput.Size = new System.Drawing.Size(866, 516);
+            this.CopiedImageOutput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.CopiedImageOutput.TabIndex = 33;
+            this.CopiedImageOutput.TabStop = false;
             // 
             // GetText
             // 
@@ -316,6 +377,32 @@ namespace iCopiedGit
             this.MoreMenu.Name = "MoreMenu";
             this.MoreMenu.Size = new System.Drawing.Size(440, 467);
             this.MoreMenu.TabIndex = 44;
+            // 
+            // MoreIcon
+            // 
+            this.MoreIcon.BackgroundImage = global::iCopiedGit.Properties.Resources.icons8_menu_rounded_100;
+            this.MoreIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.MoreIcon.FlatAppearance.BorderSize = 0;
+            this.MoreIcon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.MoreIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.MoreIcon.Location = new System.Drawing.Point(38, 30);
+            this.MoreIcon.Name = "MoreIcon";
+            this.MoreIcon.Size = new System.Drawing.Size(30, 30);
+            this.MoreIcon.TabIndex = 50;
+            this.MoreIcon.UseVisualStyleBackColor = true;
+            // 
+            // ToggleMoveable
+            // 
+            this.ToggleMoveable.BackgroundImage = global::iCopiedGit.Properties.Resources.icons8_toggle_on_96;
+            this.ToggleMoveable.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ToggleMoveable.FlatAppearance.BorderSize = 0;
+            this.ToggleMoveable.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.ToggleMoveable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ToggleMoveable.Location = new System.Drawing.Point(355, 330);
+            this.ToggleMoveable.Name = "ToggleMoveable";
+            this.ToggleMoveable.Size = new System.Drawing.Size(49, 49);
+            this.ToggleMoveable.TabIndex = 48;
+            this.ToggleMoveable.UseVisualStyleBackColor = true;
             // 
             // MoveableUIHeader
             // 
@@ -385,6 +472,19 @@ namespace iCopiedGit
             this.MoreInfo.Text = "Info";
             this.MoreInfo.UseVisualStyleBackColor = true;
             // 
+            // ToggleShowInTaskbar
+            // 
+            this.ToggleShowInTaskbar.BackgroundImage = global::iCopiedGit.Properties.Resources.icons8_toggle_on_96;
+            this.ToggleShowInTaskbar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ToggleShowInTaskbar.FlatAppearance.BorderSize = 0;
+            this.ToggleShowInTaskbar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.ToggleShowInTaskbar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ToggleShowInTaskbar.Location = new System.Drawing.Point(355, 279);
+            this.ToggleShowInTaskbar.Name = "ToggleShowInTaskbar";
+            this.ToggleShowInTaskbar.Size = new System.Drawing.Size(49, 49);
+            this.ToggleShowInTaskbar.TabIndex = 42;
+            this.ToggleShowInTaskbar.UseVisualStyleBackColor = true;
+            // 
             // InTaskbarHeader
             // 
             this.InTaskbarHeader.AutoSize = true;
@@ -395,6 +495,19 @@ namespace iCopiedGit
             this.InTaskbarHeader.Size = new System.Drawing.Size(181, 30);
             this.InTaskbarHeader.TabIndex = 43;
             this.InTaskbarHeader.Text = "Show In Taskbar";
+            // 
+            // ToggleTopMost
+            // 
+            this.ToggleTopMost.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ToggleTopMost.BackgroundImage")));
+            this.ToggleTopMost.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ToggleTopMost.FlatAppearance.BorderSize = 0;
+            this.ToggleTopMost.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.ToggleTopMost.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ToggleTopMost.Location = new System.Drawing.Point(355, 224);
+            this.ToggleTopMost.Name = "ToggleTopMost";
+            this.ToggleTopMost.Size = new System.Drawing.Size(49, 49);
+            this.ToggleTopMost.TabIndex = 40;
+            this.ToggleTopMost.UseVisualStyleBackColor = true;
             // 
             // TopMostHeader
             // 
@@ -449,19 +562,30 @@ namespace iCopiedGit
             this.CountMenu.Controls.Add(this.CopiedPhraseInt);
             this.CountMenu.Location = new System.Drawing.Point(27, 352);
             this.CountMenu.Name = "CountMenu";
-            this.CountMenu.Size = new System.Drawing.Size(440, 222);
+            this.CountMenu.Size = new System.Drawing.Size(312, 222);
             this.CountMenu.TabIndex = 45;
             // 
-            // CopiedPhraseInt
+            // SessionTotalInt
             // 
-            this.CopiedPhraseInt.AutoSize = true;
-            this.CopiedPhraseInt.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.CopiedPhraseInt.ForeColor = System.Drawing.Color.White;
-            this.CopiedPhraseInt.Location = new System.Drawing.Point(31, 69);
-            this.CopiedPhraseInt.Name = "CopiedPhraseInt";
-            this.CopiedPhraseInt.Size = new System.Drawing.Size(203, 30);
-            this.CopiedPhraseInt.TabIndex = 29;
-            this.CopiedPhraseInt.Text = "Copied Phrases : 0";
+            this.SessionTotalInt.AutoSize = true;
+            this.SessionTotalInt.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.SessionTotalInt.ForeColor = System.Drawing.Color.White;
+            this.SessionTotalInt.Location = new System.Drawing.Point(31, 156);
+            this.SessionTotalInt.Name = "SessionTotalInt";
+            this.SessionTotalInt.Size = new System.Drawing.Size(177, 30);
+            this.SessionTotalInt.TabIndex = 31;
+            this.SessionTotalInt.Text = "Session Total : 0";
+            // 
+            // CopiedImagesInt
+            // 
+            this.CopiedImagesInt.AutoSize = true;
+            this.CopiedImagesInt.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.CopiedImagesInt.ForeColor = System.Drawing.Color.White;
+            this.CopiedImagesInt.Location = new System.Drawing.Point(31, 112);
+            this.CopiedImagesInt.Name = "CopiedImagesInt";
+            this.CopiedImagesInt.Size = new System.Drawing.Size(198, 30);
+            this.CopiedImagesInt.TabIndex = 30;
+            this.CopiedImagesInt.Text = "Copied Images : 0";
             // 
             // CountIcon
             // 
@@ -476,140 +600,169 @@ namespace iCopiedGit
             this.CountIcon.TabIndex = 29;
             this.CountIcon.UseVisualStyleBackColor = true;
             // 
-            // MoreIcon
+            // CopiedPhraseInt
             // 
-            this.MoreIcon.BackgroundImage = global::iCopiedGit.Properties.Resources.icons8_menu_rounded_100;
-            this.MoreIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.MoreIcon.FlatAppearance.BorderSize = 0;
-            this.MoreIcon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.MoreIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.MoreIcon.Location = new System.Drawing.Point(38, 30);
-            this.MoreIcon.Name = "MoreIcon";
-            this.MoreIcon.Size = new System.Drawing.Size(30, 30);
-            this.MoreIcon.TabIndex = 50;
-            this.MoreIcon.UseVisualStyleBackColor = true;
+            this.CopiedPhraseInt.AutoSize = true;
+            this.CopiedPhraseInt.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.CopiedPhraseInt.ForeColor = System.Drawing.Color.White;
+            this.CopiedPhraseInt.Location = new System.Drawing.Point(31, 69);
+            this.CopiedPhraseInt.Name = "CopiedPhraseInt";
+            this.CopiedPhraseInt.Size = new System.Drawing.Size(203, 30);
+            this.CopiedPhraseInt.TabIndex = 29;
+            this.CopiedPhraseInt.Text = "Copied Phrases : 0";
             // 
-            // ToggleMoveable
+            // MoreInfoPanel
             // 
-            this.ToggleMoveable.BackgroundImage = global::iCopiedGit.Properties.Resources.icons8_toggle_on_96;
-            this.ToggleMoveable.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ToggleMoveable.FlatAppearance.BorderSize = 0;
-            this.ToggleMoveable.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.ToggleMoveable.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ToggleMoveable.Location = new System.Drawing.Point(355, 330);
-            this.ToggleMoveable.Name = "ToggleMoveable";
-            this.ToggleMoveable.Size = new System.Drawing.Size(49, 49);
-            this.ToggleMoveable.TabIndex = 48;
-            this.ToggleMoveable.UseVisualStyleBackColor = true;
+            this.MoreInfoPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(21)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
+            this.MoreInfoPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.MoreInfoPanel.Controls.Add(this.RightsReservedLink);
+            this.MoreInfoPanel.Controls.Add(this.ToggleOffLink);
+            this.MoreInfoPanel.Controls.Add(this.ToggleOnLink);
+            this.MoreInfoPanel.Controls.Add(this.PlusLink);
+            this.MoreInfoPanel.Controls.Add(this.MenuRoundedLink);
+            this.MoreInfoPanel.Controls.Add(this.ShieldLink);
+            this.MoreInfoPanel.Controls.Add(this.WillHick);
+            this.MoreInfoPanel.Controls.Add(this.IconsByIcons8);
+            this.MoreInfoPanel.Controls.Add(this.CopyrightIcon);
+            this.MoreInfoPanel.Controls.Add(this.DevelopedBy);
+            this.MoreInfoPanel.Location = new System.Drawing.Point(373, 163);
+            this.MoreInfoPanel.Name = "MoreInfoPanel";
+            this.MoreInfoPanel.Size = new System.Drawing.Size(478, 412);
+            this.MoreInfoPanel.TabIndex = 51;
             // 
-            // ToggleShowInTaskbar
+            // RightsReservedLink
             // 
-            this.ToggleShowInTaskbar.BackgroundImage = global::iCopiedGit.Properties.Resources.icons8_toggle_on_96;
-            this.ToggleShowInTaskbar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ToggleShowInTaskbar.FlatAppearance.BorderSize = 0;
-            this.ToggleShowInTaskbar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.ToggleShowInTaskbar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ToggleShowInTaskbar.Location = new System.Drawing.Point(355, 279);
-            this.ToggleShowInTaskbar.Name = "ToggleShowInTaskbar";
-            this.ToggleShowInTaskbar.Size = new System.Drawing.Size(49, 49);
-            this.ToggleShowInTaskbar.TabIndex = 42;
-            this.ToggleShowInTaskbar.UseVisualStyleBackColor = true;
+            this.RightsReservedLink.AutoSize = true;
+            this.RightsReservedLink.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RightsReservedLink.Font = new System.Drawing.Font("Microsoft YaHei", 8.5F, System.Drawing.FontStyle.Bold);
+            this.RightsReservedLink.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.RightsReservedLink.Location = new System.Drawing.Point(35, 328);
+            this.RightsReservedLink.Name = "RightsReservedLink";
+            this.RightsReservedLink.Size = new System.Drawing.Size(354, 48);
+            this.RightsReservedLink.TabIndex = 58;
+            this.RightsReservedLink.Text = "https://icons8.com/icon/tocgjtmSkmsT/\r\ncopyright-all-rights-reserved";
             // 
-            // ToggleTopMost
+            // ToggleOffLink
             // 
-            this.ToggleTopMost.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ToggleTopMost.BackgroundImage")));
-            this.ToggleTopMost.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ToggleTopMost.FlatAppearance.BorderSize = 0;
-            this.ToggleTopMost.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.ToggleTopMost.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ToggleTopMost.Location = new System.Drawing.Point(355, 224);
-            this.ToggleTopMost.Name = "ToggleTopMost";
-            this.ToggleTopMost.Size = new System.Drawing.Size(49, 49);
-            this.ToggleTopMost.TabIndex = 40;
-            this.ToggleTopMost.UseVisualStyleBackColor = true;
+            this.ToggleOffLink.AutoSize = true;
+            this.ToggleOffLink.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ToggleOffLink.Font = new System.Drawing.Font("Microsoft YaHei", 8.5F, System.Drawing.FontStyle.Bold);
+            this.ToggleOffLink.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.ToggleOffLink.Location = new System.Drawing.Point(35, 300);
+            this.ToggleOffLink.Name = "ToggleOffLink";
+            this.ToggleOffLink.Size = new System.Drawing.Size(368, 24);
+            this.ToggleOffLink.TabIndex = 57;
+            this.ToggleOffLink.Text = "https://icons8.com/icon/20006/toggle-off";
             // 
-            // button1
+            // ToggleOnLink
             // 
-            this.button1.BackgroundImage = global::iCopiedGit.Properties.Resources.icons8_toggle_off_96;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(354, 60);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(49, 49);
-            this.button1.TabIndex = 28;
-            this.button1.UseVisualStyleBackColor = true;
+            this.ToggleOnLink.AutoSize = true;
+            this.ToggleOnLink.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ToggleOnLink.Font = new System.Drawing.Font("Microsoft YaHei", 8.5F, System.Drawing.FontStyle.Bold);
+            this.ToggleOnLink.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.ToggleOnLink.Location = new System.Drawing.Point(35, 273);
+            this.ToggleOnLink.Name = "ToggleOnLink";
+            this.ToggleOnLink.Size = new System.Drawing.Size(365, 24);
+            this.ToggleOnLink.TabIndex = 56;
+            this.ToggleOnLink.Text = "https://icons8.com/icon/88034/toggle-on";
             // 
-            // SecIcon
+            // PlusLink
             // 
-            this.SecIcon.BackgroundImage = global::iCopiedGit.Properties.Resources.icons8_shield_96;
-            this.SecIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.SecIcon.FlatAppearance.BorderSize = 0;
-            this.SecIcon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.SecIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.SecIcon.Location = new System.Drawing.Point(31, 24);
-            this.SecIcon.Name = "SecIcon";
-            this.SecIcon.Size = new System.Drawing.Size(30, 30);
-            this.SecIcon.TabIndex = 29;
-            this.SecIcon.UseVisualStyleBackColor = true;
+            this.PlusLink.AutoSize = true;
+            this.PlusLink.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PlusLink.Font = new System.Drawing.Font("Microsoft YaHei", 8.5F, System.Drawing.FontStyle.Bold);
+            this.PlusLink.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.PlusLink.Location = new System.Drawing.Point(35, 246);
+            this.PlusLink.Name = "PlusLink";
+            this.PlusLink.Size = new System.Drawing.Size(380, 24);
+            this.PlusLink.TabIndex = 55;
+            this.PlusLink.Text = "https://icons8.com/icon/3QiOfjluKyC9/plus";
             // 
-            // ToggleTextCopyService
+            // MenuRoundedLink
             // 
-            this.ToggleTextCopyService.BackgroundImage = global::iCopiedGit.Properties.Resources.icons8_toggle_on_96;
-            this.ToggleTextCopyService.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ToggleTextCopyService.FlatAppearance.BorderSize = 0;
-            this.ToggleTextCopyService.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.ToggleTextCopyService.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ToggleTextCopyService.Location = new System.Drawing.Point(813, 3);
-            this.ToggleTextCopyService.Name = "ToggleTextCopyService";
-            this.ToggleTextCopyService.Size = new System.Drawing.Size(49, 43);
-            this.ToggleTextCopyService.TabIndex = 34;
-            this.ToggleTextCopyService.UseVisualStyleBackColor = true;
+            this.MenuRoundedLink.AutoSize = true;
+            this.MenuRoundedLink.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.MenuRoundedLink.Font = new System.Drawing.Font("Microsoft YaHei", 8.5F, System.Drawing.FontStyle.Bold);
+            this.MenuRoundedLink.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.MenuRoundedLink.Location = new System.Drawing.Point(35, 218);
+            this.MenuRoundedLink.Name = "MenuRoundedLink";
+            this.MenuRoundedLink.Size = new System.Drawing.Size(409, 24);
+            this.MenuRoundedLink.TabIndex = 54;
+            this.MenuRoundedLink.Text = "https://icons8.com/icon/36389/menu-rounded";
             // 
-            // button2
+            // ShieldLink
             // 
-            this.button2.BackgroundImage = global::iCopiedGit.Properties.Resources.icons8_toggle_off_96;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(813, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(49, 43);
-            this.button2.TabIndex = 36;
-            this.button2.UseVisualStyleBackColor = true;
+            this.ShieldLink.AutoSize = true;
+            this.ShieldLink.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ShieldLink.Font = new System.Drawing.Font("Microsoft YaHei", 8.5F, System.Drawing.FontStyle.Bold);
+            this.ShieldLink.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.ShieldLink.Location = new System.Drawing.Point(35, 191);
+            this.ShieldLink.Name = "ShieldLink";
+            this.ShieldLink.Size = new System.Drawing.Size(331, 24);
+            this.ShieldLink.TabIndex = 53;
+            this.ShieldLink.Text = "https://icons8.com/icon/87367/shield";
             // 
-            // CopiedImageOutput
+            // WillHick
             // 
-            this.CopiedImageOutput.Location = new System.Drawing.Point(3, 53);
-            this.CopiedImageOutput.Name = "CopiedImageOutput";
-            this.CopiedImageOutput.Size = new System.Drawing.Size(866, 516);
-            this.CopiedImageOutput.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.CopiedImageOutput.TabIndex = 33;
-            this.CopiedImageOutput.TabStop = false;
+            this.WillHick.AutoSize = true;
+            this.WillHick.Font = new System.Drawing.Font("Microsoft YaHei", 8.5F, System.Drawing.FontStyle.Bold);
+            this.WillHick.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.WillHick.Location = new System.Drawing.Point(35, 118);
+            this.WillHick.Name = "WillHick";
+            this.WillHick.Size = new System.Drawing.Size(81, 24);
+            this.WillHick.TabIndex = 52;
+            this.WillHick.Text = "WillHick";
             // 
-            // CopiedImagesInt
+            // IconsByIcons8
             // 
-            this.CopiedImagesInt.AutoSize = true;
-            this.CopiedImagesInt.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.CopiedImagesInt.ForeColor = System.Drawing.Color.White;
-            this.CopiedImagesInt.Location = new System.Drawing.Point(31, 112);
-            this.CopiedImagesInt.Name = "CopiedImagesInt";
-            this.CopiedImagesInt.Size = new System.Drawing.Size(198, 30);
-            this.CopiedImagesInt.TabIndex = 30;
-            this.CopiedImagesInt.Text = "Copied Images : 0";
+            this.IconsByIcons8.AutoSize = true;
+            this.IconsByIcons8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.IconsByIcons8.ForeColor = System.Drawing.Color.White;
+            this.IconsByIcons8.Location = new System.Drawing.Point(34, 158);
+            this.IconsByIcons8.Name = "IconsByIcons8";
+            this.IconsByIcons8.Size = new System.Drawing.Size(172, 30);
+            this.IconsByIcons8.TabIndex = 51;
+            this.IconsByIcons8.Text = "Icons By Icons8";
             // 
-            // SessionTotalInt
+            // CopyrightIcon
             // 
-            this.SessionTotalInt.AutoSize = true;
-            this.SessionTotalInt.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.SessionTotalInt.ForeColor = System.Drawing.Color.White;
-            this.SessionTotalInt.Location = new System.Drawing.Point(31, 156);
-            this.SessionTotalInt.Name = "SessionTotalInt";
-            this.SessionTotalInt.Size = new System.Drawing.Size(177, 30);
-            this.SessionTotalInt.TabIndex = 31;
-            this.SessionTotalInt.Text = "Session Total : 0";
+            this.CopyrightIcon.BackgroundImage = global::iCopiedGit.Properties.Resources.icons8_copyright_all_rights_reserved_96;
+            this.CopyrightIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.CopyrightIcon.FlatAppearance.BorderSize = 0;
+            this.CopyrightIcon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(24)))), ((int)(((byte)(24)))));
+            this.CopyrightIcon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.CopyrightIcon.Location = new System.Drawing.Point(38, 30);
+            this.CopyrightIcon.Name = "CopyrightIcon";
+            this.CopyrightIcon.Size = new System.Drawing.Size(30, 30);
+            this.CopyrightIcon.TabIndex = 50;
+            this.CopyrightIcon.UseVisualStyleBackColor = true;
+            // 
+            // DevelopedBy
+            // 
+            this.DevelopedBy.AutoSize = true;
+            this.DevelopedBy.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.DevelopedBy.ForeColor = System.Drawing.Color.White;
+            this.DevelopedBy.Location = new System.Drawing.Point(34, 84);
+            this.DevelopedBy.Name = "DevelopedBy";
+            this.DevelopedBy.Size = new System.Drawing.Size(156, 30);
+            this.DevelopedBy.TabIndex = 45;
+            this.DevelopedBy.Text = "Developed By";
+            // 
+            // Credits
+            // 
+            this.Credits.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(55)))), ((int)(((byte)(55)))));
+            this.Credits.FlatAppearance.BorderSize = 0;
+            this.Credits.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.Credits.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
+            this.Credits.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Credits.Font = new System.Drawing.Font("Microsoft YaHei", 8.6F, System.Drawing.FontStyle.Bold);
+            this.Credits.ForeColor = System.Drawing.Color.White;
+            this.Credits.Location = new System.Drawing.Point(779, 582);
+            this.Credits.Name = "Credits";
+            this.Credits.Size = new System.Drawing.Size(87, 45);
+            this.Credits.TabIndex = 52;
+            this.Credits.Text = "Credits";
+            this.Credits.UseVisualStyleBackColor = true;
             // 
             // UIMain
             // 
@@ -617,14 +770,16 @@ namespace iCopiedGit
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(16)))), ((int)(((byte)(16)))));
             this.ClientSize = new System.Drawing.Size(879, 635);
+            this.Controls.Add(this.MoreMenu);
+            this.Controls.Add(this.Credits);
+            this.Controls.Add(this.SecurityMenu);
             this.Controls.Add(this.More);
             this.Controls.Add(this.SessionCount);
             this.Controls.Add(this.Security);
+            this.Controls.Add(this.MoreInfoPanel);
+            this.Controls.Add(this.CountMenu);
             this.Controls.Add(this.CopiedTextOutputPanel);
             this.Controls.Add(this.CopiedImageOutputPanel);
-            this.Controls.Add(this.CountMenu);
-            this.Controls.Add(this.MoreMenu);
-            this.Controls.Add(this.SecurityMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "UIMain";
@@ -637,11 +792,13 @@ namespace iCopiedGit
             this.CopiedTextOutputPanel.PerformLayout();
             this.CopiedImageOutputPanel.ResumeLayout(false);
             this.CopiedImageOutputPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CopiedImageOutput)).EndInit();
             this.MoreMenu.ResumeLayout(false);
             this.MoreMenu.PerformLayout();
             this.CountMenu.ResumeLayout(false);
             this.CountMenu.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CopiedImageOutput)).EndInit();
+            this.MoreInfoPanel.ResumeLayout(false);
+            this.MoreInfoPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -653,7 +810,6 @@ namespace iCopiedGit
         private System.Windows.Forms.Button SessionCount;
         private System.Windows.Forms.Button Security;
         private System.Windows.Forms.Panel SecurityMenu;
-        private System.Windows.Forms.Label ClearedCountInt;
         private System.Windows.Forms.Button ClearHelp;
         private System.Windows.Forms.Button ClearClipboard;
         private System.Windows.Forms.Button button1;
@@ -690,6 +846,18 @@ namespace iCopiedGit
         private System.Windows.Forms.Label CopiedPhraseInt;
         private System.Windows.Forms.Label SessionTotalInt;
         private System.Windows.Forms.Label CopiedImagesInt;
+        private System.Windows.Forms.Panel MoreInfoPanel;
+        private System.Windows.Forms.Label ToggleOffLink;
+        private System.Windows.Forms.Label ToggleOnLink;
+        private System.Windows.Forms.Label PlusLink;
+        private System.Windows.Forms.Label MenuRoundedLink;
+        private System.Windows.Forms.Label ShieldLink;
+        private System.Windows.Forms.Label WillHick;
+        private System.Windows.Forms.Label IconsByIcons8;
+        private System.Windows.Forms.Button CopyrightIcon;
+        private System.Windows.Forms.Label DevelopedBy;
+        private System.Windows.Forms.Label RightsReservedLink;
+        private System.Windows.Forms.Button Credits;
     }
 }
 

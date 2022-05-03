@@ -6,6 +6,7 @@ Currently on the Github is the base of the application (UI and Core Functions). 
 
 # Supported Devices
 Windows 10 (Tested and Used)
+Older Windows versions havent been tested (7 and 8, Unsure on 11)
 
 # Credits
 WillHick

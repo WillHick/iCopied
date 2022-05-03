@@ -9,4 +9,4 @@ Windows 10 (Tested and Used)
 
 # Credits
 WillHick
-Icons Used Are By icons8 (icons8.com) (All Are Linked In The Applications As They Site States)
+Icons Used Are By icons8 (https://icons8.com/) (All Are Linked In The Applications As They Site States)
